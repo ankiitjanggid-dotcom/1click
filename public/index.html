@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>1Klick2DigiWorld | Best Digital Marketing Agency in Rajasthan — Ajmer, Kishangarh, Pushkar</title>
+  <meta name="description" content="1Klick2DigiWorld is the best Digital Marketing Agency in Rajasthan offering SEO, Social Media Marketing, PPC, Website Development, Content Marketing & WhatsApp API solutions in Ajmer, Kishangarh and Pushkar." />
+  <meta name="keywords" content="Digital Marketing Agency Rajasthan, SEO Agency Ajmer, Social Media Marketing Kishangarh, PPC Agency Rajasthan, Website Development Ajmer, WhatsApp API Rajasthan, Digital Marketing Pushkar" />
+  <meta name="author" content="1Klick2DigiWorld" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://1klick2digiworld.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="1Klick2DigiWorld | Best Digital Marketing Agency in Rajasthan" />
+  <meta property="og:description" content="Results-driven digital marketing agency in Ajmer, Rajasthan. SEO, Social Media, PPC, Web Development & WhatsApp API solutions." />
+  <meta property="og:url" content="https://1klick2digiworld.com/" />
+  <meta property="og:site_name" content="1Klick2DigiWorld" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="1Klick2DigiWorld | Best Digital Marketing Agency in Rajasthan" />
+  <meta name="twitter:description" content="Results-driven digital marketing agency in Ajmer, Rajasthan. SEO, Social Media, PPC, Web Development & WhatsApp API solutions." />
+
+  <!-- Google Fonts — preconnect first for speed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+
+  <style>
+    /* ── Variables ──────────────────────────────── */
+    :root {
+      --primary:      #f256a0;
+      --primary-dark: #d63d87;
+      --accent:       #f256a0;
+      --dark:         #0a0e1a;
+      --dark-2:       #12172a;
+      --text-muted:   #6c757d;
+      --radius:       12px;
+
+      /* Override Bootstrap primary */
+      --bs-primary:         #f256a0;
+      --bs-primary-rgb:     242,86,160;
+      --bs-link-color:      #f256a0;
+      --bs-link-hover-color:#d63d87;
+      --bs-btn-bg:          #f256a0;
+      --bs-btn-border-color:#f256a0;
+    }
+
+    /* ── Base ───────────────────────────────────── */
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #1e2230;
+      background: #fff;
+      overflow-x: hidden;
+    }
+
+    h1,h2,h3,h4,h5 { font-weight: 700; }
+
+    /* ── Utility classes ────────────────────────── */
+    .text-accent    { color: var(--accent) !important; }
+    .bg-accent      { background: var(--accent) !important; }
+    .btn-accent {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      border-radius: 50px;
+      padding: .65rem 1.75rem;
+      transition: all .25s;
+    }
+    .btn-accent:hover {
+      background: #e05a1f;
+      border-color: #e05a1f;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(242,86,160,.35);
+    }
+    .btn-outline-light-custom {
+      border: 2px solid rgba(255,255,255,.5);
+      color: #fff;
+      font-weight: 600;
+      border-radius: 50px;
+      padding: .65rem 1.75rem;
+      transition: all .25s;
+    }
+    .btn-outline-light-custom:hover {
+      background: rgba(255,255,255,.15);
+      border-color: #fff;
+      color: #fff;
+    }
+
+    /* Section spacing */
+    section { padding: 90px 0; }
+    .section-label {
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: .6rem;
+    }
+
+    /* ── Scroll reveal ──────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .3s; }
+    .reveal-delay-4 { transition-delay: .4s; }
+
+    /* ── Navbar ─────────────────────────────────── */
+    #navbar {
+      transition: background .3s, box-shadow .3s;
+      background: transparent;
+    }
+    #navbar.scrolled {
+      background: rgba(10,14,26,.97) !important;
+      box-shadow: 0 2px 20px rgba(0,0,0,.35);
+    }
+    .navbar-brand-text { font-size: 1.3rem; font-weight: 800; }
+    .navbar-brand-text span { color: var(--accent); }
+    .nav-link {
+      color: rgba(255,255,255,.85) !important;
+      font-weight: 500;
+      font-size: .9rem;
+      transition: color .2s;
+    }
+    .nav-link:hover, .nav-link.active { color: #fff !important; }
+
+    /* ── Hero ───────────────────────────────────── */
+    #hero {
+      background: linear-gradient(135deg, #070b1c 0%, #0d1533 45%, #1a0a30 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 50% at 70% 50%, rgba(242,86,160,.15) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 40% at 20% 80%, rgba(242,86,160,.1) 0%, transparent 60%);
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      backdrop-filter: blur(8px);
+      padding: .45rem 1rem;
+      border-radius: 50px;
+      font-size: .82rem;
+      color: rgba(255,255,255,.9);
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+    .hero-badge .dot { width: 8px; height: 8px; background: #22c55e; border-radius: 50%; }
+    .hero-headline {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      line-height: 1.2;
+      color: #fff;
+      font-weight: 800;
+    }
+    .hero-headline .highlight {
+      background: linear-gradient(90deg, #f256a0, #ff8ec8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-sub {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,.7);
+      max-width: 540px;
+      line-height: 1.75;
+    }
+    /* Hero floating card */
+    .hero-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(16px);
+      border-radius: 18px;
+      padding: 1.25rem 1.5rem;
+      color: #fff;
+    }
+    .stat-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: rgba(255,255,255,.08);
+      border-radius: 50px;
+      padding: .35rem .9rem;
+      font-size: .82rem;
+      font-weight: 600;
+      color: rgba(255,255,255,.9);
+    }
+
+    /* ── Services ───────────────────────────────── */
+    #services {
+      padding: 80px 0;
+    }
+     /* ── Services ───────────────────────────────── */
+    .bg-col {
+      background: #f8f9ff;
+    }
+
+    .service-card {
+      border-radius: 18px;
+      border: 1px solid #eaedf5;
+      padding: 2rem 1.75rem 1.75rem;
+      transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+      height: 100%;
+      background: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #f256a0, #ff8ec8);
+      opacity: 0;
+      transition: opacity .3s;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(242,86,160,.25);
+      box-shadow: 0 20px 48px rgba(242,86,160,.12);
+    }
+    .service-card:hover::before { opacity: 1; }
+    .service-icon {
+      width: 64px; height: 64px;
+      border-radius: 18px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.65rem;
+      margin-bottom: 1.4rem;
+      flex-shrink: 0;
+    }
+    .svc-tags { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.25rem; }
+    .svc-tag {
+      font-size: .72rem;
+      font-weight: 600;
+      padding: .28rem .7rem;
+      border-radius: 50px;
+      background: #f4f5fb;
+      border: 1px solid #e4e7f2;
+      color: #6c757d;
+      letter-spacing: .02em;
+    }
+
+    /* ── Stats ──────────────────────────────────── */
+    #stats {
+      background: var(--dark);
+      padding: 70px 0;
+    }
+    .stat-item { text-align: center; }
+    .stat-num {
+      font-size: 3rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #f256a0, #ff8ec8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.1;
+    }
+    .stat-label { color: rgba(255,255,255,.6); font-size: .9rem; margin-top: .35rem; }
+
+    /* ── Why Us ─────────────────────────────────── */
+    #why-us {
+      padding: 80px 0;
+    }
+    .why-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      padding: 1.75rem;
+      border-radius: 16px;
+      background: #fff;
+      border: 1px solid #f0f0f5;
+      transition: all .3s ease;
+      box-shadow: 0 2px 12px rgba(0,0,0,.04);
+    }
+    .why-feature:hover {
+      border-color: rgba(242,86,160,.25);
+      box-shadow: 0 12px 36px rgba(242,86,160,.12);
+      transform: translateY(-4px);
+    }
+    .why-num {
+      font-size: 2.8rem;
+      font-weight: 900;
+      line-height: 1;
+      background: linear-gradient(135deg, #f256a0, #ff8ec8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      min-width: 56px;
+      letter-spacing: -.04em;
+    }
+    .why-feature h4 { font-size: 1rem; font-weight: 700; margin-bottom: .4rem; }
+    .why-feature p  { font-size: .875rem; color: #6c757d; margin: 0; line-height: 1.65; }
+
+    /* ── Process ────────────────────────────────── */
+    #process {
+      background: #fff;
+      padding: 80px 0;
+    }
+
+    .timeline-wrap {
+      position: relative;
+      padding-top: 1rem;
+    }
+    .timeline-line {
+      position: absolute;
+      top: 44px;
+      left: calc(12.5% + 28px);
+      right: calc(12.5% + 28px);
+      height: 2px;
+      background: linear-gradient(90deg, #f256a0, rgba(242,86,160,.15));
+    }
+    @media (max-width: 767px) {
+      .timeline-line { display: none; }
+    }
+    .step-col { position: relative; z-index: 1; }
+    .step-circle {
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #f256a0, #c42e82);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: #fff;
+      margin: 0 auto 1.25rem;
+      box-shadow: 0 0 0 6px rgba(242,86,160,.12), 0 8px 24px rgba(242,86,160,.25);
+      position: relative;
+    }
+    .step-icon-wrap {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      background: rgba(242,86,160,.1);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      color: #f256a0;
+      margin: 0 auto 1rem;
+    }
+    .step-card {
+      background: #f8f9ff;
+      border: 1px solid #eaedf5;
+      border-radius: 16px;
+      padding: 1.75rem 1.5rem;
+      text-align: center;
+      transition: all .3s;
+      height: 230px;
+    }
+    .step-card:hover {
+      background: #fff;
+      border-color: rgba(242,86,160,.25);
+      transform: translateY(-5px);
+      box-shadow: 0 16px 40px rgba(242,86,160,.1);
+    }
+    .step-card h4 { color: #1e2230; font-size: 1rem; margin-bottom: .5rem; }
+    .step-card p  { color: #6c757d; font-size: .875rem; margin: 0; line-height: 1.7; }
+
+    /* ── Testimonials ───────────────────────────── */
+    .testimonial-card {
+      border-radius: var(--radius);
+      border: 1px solid #e8edf5;
+      padding: 2rem;
+      position: relative;
+      height:100%;
+      transition: box-shadow .3s, transform .3s;
+    }
+    .testimonial-card:hover { box-shadow: 0 16px 40px rgba(0,0,0,.08); transform: translateY(-4px); }
+    .quote-icon {
+      position: absolute;
+      top: 1.5rem; right: 1.75rem;
+      font-size: 2.5rem;
+      color: #e8edf5;
+      line-height: 1;
+    }
+    .stars { color: #f59e0b; font-size: .9rem; }
+
+    /* ── CTA section ────────────────────────────── */
+    #cta {
+      background: linear-gradient(135deg, #0a0e1a 0%, #0d1a45 100%);
+      padding: 90px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    #cta::before {
+      content: '';
+      position: absolute;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(242,86,160,.2) 0%, transparent 70%);
+      top: -150px; right: -150px;
+      border-radius: 50%;
+    }
+
+    /* ── Contact cards ──────────────────────────── */
+    .contact-card {
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      background: #f8fbff;
+      border: 1px solid #e4edf8;
+      transition: box-shadow .3s, transform .3s;
+    }
+    .contact-card:hover { box-shadow: 0 10px 28px rgba(242,86,160,.1); transform: translateY(-3px); }
+    .contact-icon {
+      width: 50px; height: 50px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+    }
+
+    /* ── Footer ─────────────────────────────────── */
+    #footer {
+      background: var(--dark);
+      padding: 70px 0 30px;
+      color: rgba(255,255,255,.7);
+    }
+    #footer h5 { color: #fff; font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 1.2rem; }
+    #footer a { color: rgba(255,255,255,.6); text-decoration: none; font-size: .9rem; transition: color .2s; margin-bottom: .5rem; }
+    #footer a:hover { color: #fff; }
+    .footer-divider { border-color: rgba(255,255,255,.1); margin: 2rem 0 1.5rem; }
+    .social-btn {
+      width: 38px; height: 38px;
+      border-radius: 10px;
+      background: rgba(255,255,255,.08);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.7);
+      font-size: 1rem;
+      transition: background .2s, color .2s;
+      text-decoration: none;
+    }
+    .social-btn:hover { background: var(--primary); color: #fff; }
+
+    /* ── Back to top ────────────────────────────── */
+    #back-to-top {
+      position: fixed;
+      bottom: 1.75rem; right: 1.75rem;
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity .3s, transform .3s;
+      z-index: 999;
+      border: none;
+    }
+    #back-to-top.show { opacity: 1; transform: none; }
+    #back-to-top:hover { background: var(--primary-dark); }
+  </style>
+</head>
+
+<body>
+
+<!-- ================================================================
+     NAVBAR
+     ================================================================ -->
+<header>
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top py-3" aria-label="Main navigation">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#hero" aria-label="1Klick2DigiWorld Home">
+        <img src="public/logo.png" alt="1Klick2DigiWorld Logo"  height="50" class="d-inline-block align-text-top">
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list text-white fs-3"></i>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 py-3 py-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-accent" href="mailto:admin@1klick2digiworld.com">Get Free Consultation</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+
+<!-- ================================================================
+     HERO SECTION
+     ================================================================ -->
+<section id="hero" aria-label="Hero">
+  <div class="container position-relative z-1">
+    <div class="row align-items-center g-5">
+
+      <!-- Left text -->
+      <div class="col-lg-6">
+        <div class="hero-badge reveal">
+          <span class="dot"></span>
+          Rajasthan's #1 Digital Marketing Agency
+        </div>
+
+        <h1 class="hero-headline reveal reveal-delay-1">
+          Grow Your Business<br />
+          with <span class="highlight">Smart Digital</span><br />
+          <span class="highlight">Marketing</span>
+        </h1>
+
+        <p class="hero-sub mt-4 mb-5 reveal reveal-delay-2">
+          We're a results-driven digital marketing agency in Ajmer helping brands in Rajasthan, Pushkar, and Kishangarh stand out online with smart, measurable strategies.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3 reveal reveal-delay-3">
+          <a href="mailto:admin@1klick2digiworld.com" class="btn btn-accent btn-lg">
+            <i class="bi bi-calendar-check me-2"></i>Get Free Consultation
+          </a>
+          <a href="#services" class="btn btn-outline-light-custom btn-lg">
+            Our Services <i class="bi bi-arrow-down ms-1"></i>
+          </a>
+        </div>
+
+        <!-- Trust row -->
+        <div class="d-flex flex-wrap gap-3 mt-5 reveal reveal-delay-4">
+          <div class="stat-pill"><i class="bi bi-people-fill text-accent"></i> 100+ Happy Clients</div>
+          <div class="stat-pill"><i class="bi bi-star-fill" style="color:#f59e0b"></i> 5-Star Rated Agency</div>
+          <div class="stat-pill"><i class="bi bi-geo-alt-fill" style="color:#22c55e"></i> Based in Rajasthan</div>
+        </div>
+      </div>
+
+      <!-- Right visual -->
+      <div class="col-lg-6 reveal reveal-delay-2 d-none d-lg-block">
+        <div class="hero-card mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="fw-semibold">Campaign Performance</span>
+            <span class="badge bg-success rounded-pill">Live</span>
+          </div>
+          <div class="row g-3 text-center mb-3">
+            <div class="col-4">
+              <div class="fw-bold fs-5 text-white">+185%</div>
+              <div style="font-size:.8rem;color:rgba(255,255,255,.5)">Organic Traffic</div>
+            </div>
+            <div class="col-4">
+              <div class="fw-bold fs-5 text-white">4.2x</div>
+              <div style="font-size:.8rem;color:rgba(255,255,255,.5)">ROI on Ads</div>
+            </div>
+            <div class="col-4">
+              <div class="fw-bold fs-5 text-white">3.8%</div>
+              <div style="font-size:.8rem;color:rgba(255,255,255,.5)">Conversion Rate</div>
+            </div>
+          </div>
+          <!-- Fake bar chart -->
+          <div class="d-flex align-items-end gap-2" style="height:60px;">
+            <div class="rounded-1 flex-fill" style="height:35%;background:rgba(242,86,160,.4)"></div>
+            <div class="rounded-1 flex-fill" style="height:55%;background:rgba(242,86,160,.5)"></div>
+            <div class="rounded-1 flex-fill" style="height:45%;background:rgba(242,86,160,.55)"></div>
+            <div class="rounded-1 flex-fill" style="height:70%;background:rgba(242,86,160,.65)"></div>
+            <div class="rounded-1 flex-fill" style="height:60%;background:rgba(242,86,160,.7)"></div>
+            <div class="rounded-1 flex-fill" style="height:85%;background:rgba(242,86,160,.8)"></div>
+            <div class="rounded-1 flex-fill" style="height:100%;background:#f256a0"></div>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="hero-card text-center">
+              <div class="fw-bold fs-3 text-white">98<span style="font-size:1rem">/100</span></div>
+              <div style="font-size:.8rem;color:rgba(255,255,255,.5)">PageSpeed Score</div>
+              <div class="progress mt-2" style="height:4px;">
+                <div class="progress-bar bg-success" style="width:98%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="hero-card">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <div style="width:10px;height:10px;background:#22c55e;border-radius:50%;"></div>
+                <span style="font-size:.8rem;color:rgba(255,255,255,.6)">Just achieved!</span>
+              </div>
+              <div style="font-size:.85rem;color:#fff;font-weight:600;">Top 3 Google Ranking</div>
+              <div style="font-size:.75rem;color:rgba(255,255,255,.5);">Retail client — Kishangarh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     CLIENTS LOGOS BAR
+     ================================================================ -->
+<section style="padding:40px 0; background:#f8fbff; border-top:1px solid #e8edf5; border-bottom:1px solid #e8edf5;" aria-label="Trusted By">
+  <div class="container">
+    <p class="text-center text-muted small fw-semibold text-uppercase mb-4 tracking-widest">Trusted by businesses across Rajasthan</p>
+    <div class="row justify-content-center align-items-center g-4 opacity-50">
+      <div class="col-auto"><span class="fw-bold text-dark fs-5">FashionBrand</span></div>
+      <div class="col-auto"><span class="fw-bold text-dark fs-5">RetailMart</span></div>
+      <div class="col-auto"><span class="fw-bold text-dark fs-5">AjmerTech</span></div>
+      <div class="col-auto"><span class="fw-bold text-dark fs-5">PushkarArts</span></div>
+      <div class="col-auto"><span class="fw-bold text-dark fs-5">KishangarhCo</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     ABOUT SECTION
+     ================================================================ -->
+<section id="about" aria-label="About 1Klick2DigiWorld">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Left visual -->
+      <div class="col-lg-5 reveal">
+        <div class="position-relative">
+          <div class="rounded-4 overflow-hidden" style="background:linear-gradient(135deg,#f0f5ff,#e8edf8);padding:2.5rem;">
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex align-items-center gap-3 p-3 bg-white rounded-3 shadow-sm">
+                <div class="service-icon bg-primary bg-opacity-10 text-primary"><i class="bi bi-graph-up-arrow"></i></div>
+                <div>
+                  <div class="fw-semibold">SEO Ranking</div>
+                  <div class="small text-muted">Avg. 3x traffic increase in 6 months</div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3 p-3 bg-white rounded-3 shadow-sm">
+                <div class="service-icon" style="background:#fff3ec;color:var(--accent);"><i class="bi bi-megaphone"></i></div>
+                <div>
+                  <div class="fw-semibold">Social Media</div>
+                  <div class="small text-muted">Avg. 4.2x engagement boost</div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3 p-3 bg-white rounded-3 shadow-sm">
+                <div class="service-icon" style="background:#f0fdf4;color:#22c55e;"><i class="bi bi-whatsapp"></i></div>
+                <div>
+                  <div class="fw-semibold">WhatsApp API</div>
+                  <div class="small text-muted">Instant customer engagement</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Badge overlay -->
+          <div class="position-absolute top-0 end-0 translate-middle bg-primary text-white rounded-circle d-flex flex-column align-items-center justify-content-center shadow" style="width:80px;height:80px;">
+            <div class="fw-bold fs-5 lh-1">5+</div>
+            <div style="font-size:.65rem;">Years</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right text -->
+      <div class="col-lg-7">
+        <div class="section-label reveal">About Us</div>
+        <h2 class="reveal reveal-delay-1" style="font-size:clamp(1.8rem,3.5vw,2.6rem);">
+          Your Growth Partner in the<br />Digital World
+        </h2>
+        <p class="text-muted mt-3 mb-4 reveal reveal-delay-2" style="line-height:1.85;">
+          At <strong>1Klick2DigiWorld</strong>, we believe every business deserves a strong digital presence. As a trusted Digital Marketing Agency in Rajasthan, we combine creativity, strategy, and technology to help you connect with your audience and grow faster.
+        </p>
+        <p class="text-muted mb-4 reveal reveal-delay-2" style="line-height:1.85;">
+          From small businesses to established brands, we've helped companies in Ajmer, Pushkar, and Kishangarh achieve real results — more traffic, better leads, and stronger brand visibility.
+        </p>
+        <div class="row g-3 mb-4">
+          <div class="col-sm-6 reveal reveal-delay-3">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill text-primary"></i>
+              <span class="fw-medium">Data-driven strategies</span>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal reveal-delay-3">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill text-primary"></i>
+              <span class="fw-medium">Transparent reporting</span>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal reveal-delay-4">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill text-primary"></i>
+              <span class="fw-medium">Local market expertise</span>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal reveal-delay-4">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill text-primary"></i>
+              <span class="fw-medium">Dedicated account manager</span>
+            </div>
+          </div>
+        </div>
+        <a href="mailto:admin@1klick2digiworld.com" class="btn btn-accent reveal reveal-delay-4">
+          Talk to Our Team <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     STATS SECTION
+     ================================================================ -->
+<section id="stats" aria-label="Company Statistics">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-6 col-md-3 reveal">
+        <div class="stat-item">
+          <div class="stat-num">100+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 reveal reveal-delay-1">
+        <div class="stat-item">
+          <div class="stat-num">200+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 reveal reveal-delay-2">
+        <div class="stat-item">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 reveal reveal-delay-3">
+        <div class="stat-item">
+          <div class="stat-num">95%</div>
+          <div class="stat-label">Client Retention</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     SERVICES SECTION
+     ================================================================ -->
+<section id="services" aria-label="Our Services">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <div class="section-label reveal">What We Do</div>
+      <h2 class="reveal reveal-delay-1" style="font-size:clamp(1.8rem,3.5vw,2.6rem);">
+        Digital Marketing Services<br />That Deliver Real Results
+      </h2>
+    
+    </div>
+
+    <div class="row g-4">
+
+      <!-- SEO -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <article class="service-card">
+          <div class="service-icon" style="background:linear-gradient(135deg,rgba(242,86,160,.2),rgba(242,86,160,.08));color:#f256a0;">
+            <i class="bi bi-search"></i>
+          </div>
+          <h3 class="h5 mb-2">SEO Services</h3>
+          <p class="small mb-0">
+            Rank higher and stay ahead. Our SEO team helps businesses across Rajasthan dominate Google, attract qualified leads, and grow organic traffic consistently.
+          </p>
+          <div class="svc-tags">
+            <span class="svc-tag">On-page SEO</span>
+            <span class="svc-tag">Local SEO</span>
+            <span class="svc-tag">Technical Audit</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+        <article class="service-card">
+          <div class="service-icon" style="background:linear-gradient(135deg,rgba(249,115,22,.18),rgba(249,115,22,.06));color:#fb923c;">
+            <i class="bi bi-share-fill"></i>
+          </div>
+          <h3 class="h5 mb-2">Social Media Marketing</h3>
+          <p class="small mb-0">
+            Build your brand where your audience lives. We create result-driven campaigns on Instagram, Facebook & LinkedIn that boost presence and engagement.
+          </p>
+          <div class="svc-tags">
+            <span class="svc-tag">Instagram Ads</span>
+            <span class="svc-tag">Facebook Ads</span>
+            <span class="svc-tag">Content Calendar</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- PPC -->
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+        <article class="service-card">
+          <div class="service-icon" style="background:linear-gradient(135deg,rgba(34,197,94,.18),rgba(34,197,94,.06));color:#22c55e;">
+            <i class="bi bi-lightning-charge-fill"></i>
+          </div>
+          <h3 class="h5 mb-2">PPC Advertising</h3>
+          <p class="small mb-0">
+            Get instant visibility and measurable results. We manage high-performing Google Ads & Meta campaigns to reach the right audience and maximize your ROI.
+          </p>
+          <div class="svc-tags">
+            <span class="svc-tag">Google Ads</span>
+            <span class="svc-tag">Meta Ads</span>
+            <span class="svc-tag">ROI Tracking</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Website Development -->
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+        <article class="service-card">
+          <div class="service-icon" style="background:linear-gradient(135deg,rgba(99,102,241,.18),rgba(99,102,241,.06));color:#818cf8;">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <h3 class="h5 mb-2">Website Development</h3>
+          <p class="small mb-0">
+            Your website is your first impression — make it count. We build fast, SEO-ready, and mobile-first websites tailored to your business goals and brand.
+          </p>
+          <div class="svc-tags">
+            <span class="svc-tag">Responsive Design</span>
+            <span class="svc-tag">WordPress</span>
+            <span class="svc-tag">Speed Tuning</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Content Marketing -->
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+        <article class="service-card">
+          <div class="service-icon" style="background:linear-gradient(135deg,rgba(168,85,247,.18),rgba(168,85,247,.06));color:#c084fc;">
+            <i class="bi bi-pencil-fill"></i>
+          </div>
+          <h3 class="h5 mb-2">Content Marketing</h3>
+          <p class="small mb-0">
+            Engage, educate, and convert. Our team creates blogs, videos, and infographics that resonate with your audience and drive steady organic growth.
+          </p>
+          <div class="svc-tags">
+            <span class="svc-tag">Blog Writing</span>
+            <span class="svc-tag">Reels & Video</span>
+            <span class="svc-tag">Email Campaigns</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- WhatsApp API -->
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-3">
+        <article class="service-card">
+          <div class="service-icon" style="background:linear-gradient(135deg,rgba(34,197,94,.18),rgba(34,197,94,.06));color:#4ade80;">
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <h3 class="h5 mb-2">WhatsApp API Solutions</h3>
+          <p class="small mb-0">
+            Connect with customers instantly. Our WhatsApp API integration automates messages, manages inquiries, and boosts engagement — all in one click.
+          </p>
+          <div class="svc-tags">
+            <span class="svc-tag">Automation</span>
+            <span class="svc-tag">CRM Integration</span>
+            <span class="svc-tag">Broadcasts</span>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     WHY CHOOSE US
+     ================================================================ -->
+<section id="why-us"  class="bg-col" aria-label="Why Choose 1Klick2DigiWorld ">
+  <div class="container">
+
+    <div class="row align-items-center g-5">
+
+      <!-- Left — big headline block -->
+      <div class="col-lg-5 reveal">
+        <div class="section-label">Why Us</div>
+        <h2 class="mt-2 mb-4" style="font-size:clamp(1.9rem,3.8vw,2.8rem);line-height:1.2;">
+          Why Rajasthan<br />Brands Choose<br />
+          <span style="background:linear-gradient(90deg,#f256a0,#ff8ec8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">1Klick2DigiWorld</span>
+        </h2>
+        <p class="text-muted mb-4" style="line-height:1.8;max-width:380px;">
+          We combine deep local market knowledge with proven global strategies — so your marketing budget actually works for you, not against you.
+        </p>
+        <!-- Mini stats row -->
+        <div class="d-flex gap-4 flex-wrap">
+          <div>
+            <div style="font-size:2rem;font-weight:900;line-height:1;background:linear-gradient(135deg,#f256a0,#ff8ec8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">100+</div>
+            <div class="text-muted small mt-1">Happy Clients</div>
+          </div>
+          <div style="width:1px;background:#e8edf5;"></div>
+          <div>
+            <div style="font-size:2rem;font-weight:900;line-height:1;background:linear-gradient(135deg,#f256a0,#ff8ec8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">95%</div>
+            <div class="text-muted small mt-1">Client Retention</div>
+          </div>
+          <div style="width:1px;background:#e8edf5;"></div>
+          <div>
+            <div style="font-size:2rem;font-weight:900;line-height:1;background:linear-gradient(135deg,#f256a0,#ff8ec8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">5+</div>
+            <div class="text-muted small mt-1">Years Exp.</div>
+          </div>
+        </div>
+        <a href="mailto:admin@1klick2digiworld.com" class="btn btn-accent mt-4">
+          Start Your Growth <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+
+      <!-- Right — 2×2 feature grid -->
+      <div class="col-lg-7">
+        <div class="row g-3">
+
+          <div class="col-sm-6 reveal reveal-delay-1">
+            <div class="why-feature">
+              <div class="why-num">01</div>
+              <div>
+                <h4>Data-Driven Approach</h4>
+                <p>Every decision is backed by real analytics. We track, measure, and continuously optimize for maximum ROI on your budget.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 reveal reveal-delay-2">
+            <div class="why-feature">
+              <div class="why-num">02</div>
+              <div>
+                <h4>Local Market Expertise</h4>
+                <p>Deep understanding of Rajasthan's business landscape — Ajmer, Kishangarh, and Pushkar. We know your audience.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 reveal reveal-delay-2">
+            <div class="why-feature">
+              <div class="why-num">03</div>
+              <div>
+                <h4>Transparent Reporting</h4>
+                <p>Monthly reports with clear KPIs so you always know exactly what's working and where every rupee is going.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 reveal reveal-delay-3">
+            <div class="why-feature">
+              <div class="why-num">04</div>
+              <div>
+                <h4>Dedicated Support</h4>
+                <p>Your own account manager is always available to answer questions, review campaigns, and keep growth on track.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     PROCESS SECTION
+     ================================================================ -->
+<section id="process" aria-label="Our Process">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <div class="section-label reveal">How We Work</div>
+      <h2 class="reveal reveal-delay-1" style="font-size:clamp(1.8rem,3.5vw,2.6rem);">
+        From Zero to Growth in<br />4 Simple Steps
+      </h2>
+    
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline-wrap">
+      <!-- Connecting line (desktop only) -->
+      <div class="timeline-line d-none d-lg-block"></div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-3 step-col reveal">
+          <div class="step-circle">1</div>
+          <div class="step-card">
+            <div class="step-icon-wrap mx-auto mb-3">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <h4>Discovery Call</h4>
+            <p>We learn about your business, goals, and audience in a free consultation — no strings attached.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 step-col reveal reveal-delay-1">
+          <div class="step-circle">2</div>
+          <div class="step-card">
+            <div class="step-icon-wrap mx-auto mb-3">
+              <i class="bi bi-map-fill"></i>
+            </div>
+            <h4>Strategy &amp; Plan</h4>
+            <p>We craft a custom digital marketing roadmap tailored to your business and the Rajasthan market.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 step-col reveal reveal-delay-2">
+          <div class="step-circle">3</div>
+          <div class="step-card">
+            <div class="step-icon-wrap mx-auto mb-3">
+              <i class="bi bi-rocket-takeoff-fill"></i>
+            </div>
+            <h4>Execute &amp; Launch</h4>
+            <p>Our team runs campaigns across SEO, social, PPC, and content with speed, creativity, and precision.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 step-col reveal reveal-delay-3">
+          <div class="step-circle">4</div>
+          <div class="step-card">
+            <div class="step-icon-wrap mx-auto mb-3">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h4>Measure &amp; Grow</h4>
+            <p>We report transparently, optimize continuously, and keep compounding your results month after month.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom CTA bar -->
+    <div class="text-center mt-5 pt-2 reveal">
+      <p class="mb-3" style="color:rgba(255,255,255,.55);">Ready to start your growth journey?</p>
+      <a href="mailto:admin@1klick2digiworld.com" class="btn btn-accent btn-lg">
+        <i class="bi bi-calendar-check me-2"></i>Book a Free Discovery Call
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================================================================
+     TESTIMONIALS
+     ================================================================ -->
+<section id="testimonials" class="bg-col" aria-label="Client Testimonials">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <div class="section-label reveal">Testimonials</div>
+      <h2 class="reveal reveal-delay-1" style="font-size:clamp(1.8rem,3.5vw,2.6rem);">
+        What Our Clients Say
+      </h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4 reveal">
+        <blockquote class="testimonial-card">
+          <div class="quote-icon">"</div>
+          <div class="stars mb-3">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="text-muted small mb-4">
+            "1Klick2DigiWorld transformed our online presence completely. Our website traffic tripled in just 4 months and we're now getting consistent leads from Google. Best digital marketing agency in Ajmer!"
+          </p>
+          <footer class="d-flex align-items-center gap-3">
+            <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold text-white" style="width:44px;height:44px;background:linear-gradient(135deg,#f256a0,#c42e82);font-size:.9rem;">RS</div>
+            <div>
+              <cite class="fw-semibold text-dark not-italic">Rakesh Sharma</cite>
+              <div class="text-muted small">Owner, Sharma Textile Store</div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+        <blockquote class="testimonial-card">
+          <div class="quote-icon">"</div>
+          <div class="stars mb-3">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="text-muted small mb-4">
+            "The WhatsApp API integration they set up for us is a game-changer. We now respond to customer queries instantly and our conversion rate has jumped by 60%. Highly recommend their team!"
+          </p>
+          <footer class="d-flex align-items-center gap-3">
+            <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold text-white" style="width:44px;height:44px;background:linear-gradient(135deg,#f256a0,#f59e0b);font-size:.9rem;">PJ</div>
+            <div>
+              <cite class="fw-semibold text-dark not-italic">Priya Jain</cite>
+              <div class="text-muted small">Director, Kishangarh Marbles Pvt.</div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+        <blockquote class="testimonial-card">
+          <div class="quote-icon">"</div>
+          <div class="stars mb-3">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="text-muted small mb-4">
+            "Their SEO work ranked our guesthouse on the first page of Google for Pushkar tourism keywords. Bookings increased by 80% in the peak season. Exceptional work by the entire team!"
+          </p>
+          <footer class="d-flex align-items-center gap-3">
+            <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold text-white" style="width:44px;height:44px;background:linear-gradient(135deg,#22c55e,#0d9488);font-size:.9rem;">AM</div>
+            <div>
+              <cite class="fw-semibold text-dark not-italic">Arjun Mehta</cite>
+              <div class="text-muted small">Owner, Pushkar Sunrise Guesthouse</div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     CTA SECTION
+     ================================================================ -->
+<section id="cta" aria-label="Call to Action">
+  <div class="container position-relative z-1">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-8">
+        <p class="section-label reveal">Let's Get Started</p>
+        <h2 class="text-white reveal reveal-delay-1" style="font-size:clamp(2rem,4.5vw,3.2rem);">
+          Ready to Grow Your Business<br />Online?
+        </h2>
+       
+        <div class="d-flex flex-wrap gap-3 justify-content-center reveal reveal-delay-3">
+          <a href="mailto:admin@1klick2digiworld.com" class="btn btn-accent btn-lg">
+            <i class="bi bi-envelope me-2"></i>Get Free Consultation
+          </a>
+          <a href="tel:+919587517001" class="btn btn-outline-light-custom btn-lg">
+            <i class="bi bi-telephone me-2"></i>+91 95875 17001
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     CONTACT SECTION
+     ================================================================ -->
+<section id="contact" aria-label="Contact Information">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <div class="section-label reveal">Contact Us</div>
+      <h2 class="reveal reveal-delay-1" style="font-size:clamp(1.8rem,3.5vw,2.6rem);">
+        Get in Touch
+      </h2>
+     
+    </div>
+
+    <div class="row g-4 justify-content-center mb-5">
+
+      <div class="col-md-4 reveal">
+        <div class="contact-card text-center">
+          <div class="contact-icon mx-auto mb-3" style="background:#eff6ff;color:#3b82f6;">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <h4 class="h6 fw-semibold mb-1">Our Office</h4>
+          <p class="text-muted small mb-0">B-002, Majhela Rd, Opp. VR Petroleum,<br />Madanganj, Kishangarh (Raj.) – 305801</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 reveal reveal-delay-1">
+        <div class="contact-card text-center">
+          <div class="contact-icon mx-auto mb-3" style="background:#f0fdf4;color:#22c55e;">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <h4 class="h6 fw-semibold mb-1">Call Us</h4>
+          <p class="text-muted small mb-0">
+            <a href="tel:+919587517001" class="text-muted text-decoration-none">+91 95875 17001</a>
+          </p>
+          <p class="text-muted small mb-0">Mon–Sat, 9 AM – 7 PM</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 reveal reveal-delay-2">
+        <div class="contact-card text-center">
+          <div class="contact-icon mx-auto mb-3" style="background:#fff3ec;color:var(--accent);">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <h4 class="h6 fw-semibold mb-1">Email Us</h4>
+          <p class="text-muted small mb-0">
+            <a href="mailto:admin@1klick2digiworld.com" class="text-muted text-decoration-none">admin@1klick2digiworld.com</a>
+          </p>
+          <p class="text-muted small mb-0">We reply within 24 hours</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Contact Form -->
+    <div class="row justify-content-center reveal">
+      <div class="col-lg-8">
+        <div class="p-4 p-md-5 rounded-4 border bg-white shadow-sm">
+          <h3 class="h4 mb-4">Send Us a Message</h3>
+          <form action="mailto:admin@1klick2digiworld.com" method="get" enctype="text/plain" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label small fw-semibold">Full Name</label>
+                <input type="text" id="name" name="name" class="form-control rounded-3" placeholder="Your full name" required />
+              </div>
+              <div class="col-md-6">
+                <label for="phone" class="form-label small fw-semibold">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control rounded-3" placeholder="+91 XXXXX XXXXX" />
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label small fw-semibold">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control rounded-3" placeholder="your@email.com" required />
+              </div>
+              <div class="col-md-6">
+                <label for="service" class="form-label small fw-semibold">Service Interested In</label>
+                <select id="service" name="service" class="form-select rounded-3">
+                  <option value="">Select a service</option>
+                  <option>SEO Services</option>
+                  <option>Social Media Marketing</option>
+                  <option>PPC Advertising</option>
+                  <option>Website Development</option>
+                  <option>Content Marketing</option>
+                  <option>WhatsApp API Solutions</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label small fw-semibold">Your Message</label>
+                <textarea id="message" name="body" class="form-control rounded-3" rows="4" placeholder="Tell us about your project or business goals..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-accent btn-lg w-100">
+                  Send Message <i class="bi bi-send ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================================================================
+     FOOTER
+     ================================================================ -->
+<footer id="footer" aria-label="Footer">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Brand -->
+      <div class="col-lg-4">
+        <img src="public/logo.png" alt="1Klick2DigiWorld Logo"  height="50" class="d-inline-block align-text-top">
+        <p class="small" style="line-height:1.8;">
+          Rajasthan's trusted digital marketing agency helping brands in Ajmer, Kishangarh, and Pushkar grow their online presence with smart, measurable strategies.
+        </p>
+        <div class="d-flex gap-2 mt-4">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://wa.me/919587517001" class="social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="col-6 col-lg-2">
+        <h5>Services</h5>
+        <a href="#services">SEO Services</a>
+        <a href="#services">Social Media</a>
+        <a href="#services">PPC Advertising</a>
+        <a href="#services">Web Development</a>
+        <a href="#services">Content Marketing</a>
+        <a href="#services">WhatsApp API</a>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-6 col-lg-2">
+        <h5>Quick Links</h5>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#process">How We Work</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a href="mailto:admin@1klick2digiworld.com">Get Quote</a>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-4">
+        <h5>Contact</h5>
+        <div class="d-flex gap-2 mb-2 small">
+          <i class="bi bi-geo-alt-fill text-accent mt-1 flex-shrink-0"></i>
+          <span>B-002, Majhela Rd, Opp. VR Petroleum, Madanganj, Kishangarh (Raj.) – 305801</span>
+        </div>
+        <div class="d-flex gap-2 mb-2 small align-items-center">
+          <i class="bi bi-telephone-fill text-accent flex-shrink-0"></i>
+          <a href="tel:+919587517001">+91 95875 17001</a>
+        </div>
+        <div class="d-flex gap-2 small align-items-center">
+          <i class="bi bi-envelope-fill text-accent flex-shrink-0"></i>
+          <a href="mailto:admin@1klick2digiworld.com">admin@1klick2digiworld.com</a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider" />
+
+    <div class="row align-items-center g-2">
+      <div class="col-md-6">
+        <p class="small mb-0" style="color:rgba(255,255,255,.4);">
+          &copy; 2026 1Klick2DigiWorld. All Rights Reserved.
+        </p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <span class="small" style="color:rgba(255,255,255,.3);">
+          Digital Marketing Agency in Rajasthan | Ajmer | Kishangarh | Pushkar
+        </span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- Back to Top -->
+<button id="back-to-top" aria-label="Back to top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+
+<!-- Bootstrap 5 JS (Bundle with Popper) — deferred for performance -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  crossorigin="anonymous"
+  defer
+></script>
+
+<script>
+  // ── Sticky navbar ──────────────────────────────
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 30);
+  }, { passive: true });
+
+  // ── Scroll reveal ──────────────────────────────
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(el => observer.observe(el));
+
+  // ── Back to top ────────────────────────────────
+  const btt = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    btt.classList.toggle('show', window.scrollY > 400);
+  }, { passive: true });
+  btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // ── Smooth scroll for anchor links ────────────
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Close mobile menu if open
+        const nav = document.getElementById('mainNav');
+        if (nav.classList.contains('show')) {
+          nav.classList.remove('show');
+        }
+      }
+    });
+  });
+
+  // ── Active nav link on scroll ──────────────────
+  const sections = document.querySelectorAll('section[id], header[id]');
+  const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => io.observe(s));
+</script>
+
+<!-- Structured Data (JSON-LD) for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "1Klick2DigiWorld",
+  "description": "Best Digital Marketing Agency in Rajasthan offering SEO, Social Media Marketing, PPC, Website Development, Content Marketing and WhatsApp API solutions.",
+  "url": "https://1klick2digiworld.com",
+  "telephone": "+91-95875-17001",
+  "email": "admin@1klick2digiworld.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "B-002, Majhela Rd, Opp. VR Petroleum, Madanganj",
+    "addressLocality": "Kishangarh",
+    "addressRegion": "Rajasthan",
+    "postalCode": "305801",
+    "addressCountry": "IN"
+  },
+  "areaServed": ["Ajmer", "Kishangarh", "Pushkar", "Rajasthan"],
+  "serviceType": ["Digital Marketing", "SEO", "Social Media Marketing", "PPC", "Website Development", "WhatsApp API"],
+  "sameAs": []
+}
+</script>
+
+</body>
+</html>
